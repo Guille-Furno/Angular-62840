@@ -8,8 +8,10 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
-import { StudentsComponent } from './pages/students/students.component';
+
 import { StudentsModule } from './pages/students/students.module';
+
+
 
 @NgModule({
   declarations: [
