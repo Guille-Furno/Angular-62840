@@ -45,4 +45,8 @@ onDelete(id: string){
   if (confirm("Esta seguro?"))
   this.students = this.students.filter((el)=> el.id != id);
 }
+
+onEdit(id: string){
+  // this.students = this.students.filter((el)=> el.id != id);
+}
 }
