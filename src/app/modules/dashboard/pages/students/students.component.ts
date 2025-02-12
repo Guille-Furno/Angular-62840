@@ -11,7 +11,7 @@ import { generateRandomString } from '../../../../shared/utils';
 export class StudentsComponent {
 
   studentForm: FormGroup;
-  displayedColumns: string[] = ['id', 'name', 'lastName','actions'];
+  displayedColumns: string[] = ['id', 'name','actions'];
   students: Student[] = [];
 
   constructor(private fb: FormBuilder) {
