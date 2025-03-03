@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FullNamePipe } from './pipes/full-name.pipe';
-
+import {MatListModule} from '@angular/material/list';
 
 
 @NgModule({
@@ -11,6 +11,6 @@ import { FullNamePipe } from './pipes/full-name.pipe';
   imports: [
     CommonModule
   ],
-  exports: [FullNamePipe]
+  exports: [FullNamePipe, MatListModule]
 })
 export class SharedModule { }

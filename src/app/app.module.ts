@@ -7,6 +7,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 import { ConversorPipe } from './conversor.pipe';
 import { FullNamePipe } from './sheared/pipes/full-name.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FullNamePipe } from './sheared/pipes/full-name.pipe';
     BrowserModule,
     AppRoutingModule,
     DashboardModule,
+    HttpClientModule,
   ],
   providers: [
     provideAnimationsAsync()
