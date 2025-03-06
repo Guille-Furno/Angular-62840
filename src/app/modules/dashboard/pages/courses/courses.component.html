@@ -4,7 +4,7 @@
 <mat-spinner />}
 @else {
 
-    <button (click)="openFormDialog()" mat-flat-button>
+    <button [disabled]= "!(isAdmin$ | async)" (click)="openFormDialog()" mat-flat-button>
         Crear Curso
     </button>
 <app-courses-table 

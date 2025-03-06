@@ -14,11 +14,11 @@
         <th mat-header-cell *matHeaderCellDef> Acciones </th>
         <td mat-cell *matCellDef="let element">
 
-            <button (click)="delete.emit(element.id)" style="color: #dc3545;" matTooltip="Eliminar estudiante" mat-icon-button>
+            <button *ngIf="isAdmin$ | async" (click)="delete.emit(element.id)" style="color: #dc3545;" matTooltip="Eliminar estudiante" mat-icon-button>
                 <mat-icon>delete</mat-icon>
             </button>
 
-         <button (click)="edit.emit(element)" style="color: #007bff;" matTooltip = "Editar estudiante" mat-icon-button>
+         <button *ngIf="isAdmin$ | async" (click)="edit.emit(element)" style="color: #007bff;" matTooltip = "Editar estudiante" mat-icon-button>
                 <mat-icon>edit</mat-icon>
             </button>
 
