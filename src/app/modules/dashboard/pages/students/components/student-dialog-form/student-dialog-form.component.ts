@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, Inject, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { Student } from '../../models';
@@ -15,10 +15,10 @@ export class StudentDialogFormComponent {
   isEditing = false;
 
 
-    constructor(private fb: FormBuilder, 
+    constructor(private fb: FormBuilder,
       private matDialogRef: MatDialogRef <StudentDialogFormComponent>,
-      
-      @inject (MAT_DIALOG_DATA) private data?: Student
+
+      @Inject(MAT_DIALOG_DATA) private data?: Student
     ) {
       this.studentForm = this.fb.group({
         name: [null, [Validators.required]],
@@ -33,7 +33,7 @@ export class StudentDialogFormComponent {
         })
       }
     }
-  
+
   onSubmit() {
     if (this.studentForm.invalid)
     {
