@@ -8,6 +8,7 @@ import { DashboardModule } from './modules/dashboard/dashboard.module';
 import { ConversorPipe } from './conversor.pipe';
 import { FullNamePipe } from './sheared/pipes/full-name.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { TeachersModule } from './modules/dashboard/pages/teachers/teachers.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     DashboardModule,
     HttpClientModule,
+    TeachersModule,
   ],
   providers: [
     provideAnimationsAsync()
