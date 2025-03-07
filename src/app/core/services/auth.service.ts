@@ -4,6 +4,7 @@ import { BehaviorSubject, map, Observable } from "rxjs";
 import { User } from "../../modules/dashboard/pages/users/models";
 import { generateRandomString } from "../../shared/utils";
 import { Router } from "@angular/router";
+// import { AuthActions } from "../../store/auth/auth.actions";
 
 const FAKE_USERS_DB :User [] = [
     {
@@ -56,6 +57,7 @@ export class AuthService {
     return;
     }
     localStorage.setItem ('access_token', loginResult.accessToken);
+    // this.store.dispatch(AuthActions.setAuthUser({user: loginResult}));
     this._authUser$.next(loginResult);
     this.router.navigate(['dashboard', 'home'])
 }

@@ -1,0 +1,23 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "name": "Photoshop"
+    },
+    {
+      "id": "2",
+      "name": "Angular"
+    },
+    {
+      "id": "3",
+      "name": "Corel 2"
+    }
+  ],
+  "teachers":[
+    {
+        "id": "3564",
+        "name": "Maestro 1",
+        "courseId":"1"
+    }
+  ]
+}

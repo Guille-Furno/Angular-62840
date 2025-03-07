@@ -3,6 +3,8 @@ import { Course } from '../../models';
 import { AuthService } from '../../../../../../core/services/auth.service';
 import { map, Observable } from 'rxjs';
 
+
+
 @Component({
   selector: 'app-courses-table',
   templateUrl: './courses-table.component.html',
@@ -27,3 +29,4 @@ export class CoursesTableComponent {
     this.isAdmin$ = this.authService.isAdmin$;
   }
 }
+
